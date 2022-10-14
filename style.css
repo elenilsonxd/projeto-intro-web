@@ -1,0 +1,80 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+} */
+
+.container{
+    display:grid;
+    grid-template-areas: 'titulo titulo titulo'
+                         'filter filter item1'
+                         'item1 rodape rodape';
+align-items: center;
+}
+
+.titlo{
+    grid-area: titulo;
+}
+.filter{
+    grid-area: filter;
+}
+.item1{
+    grid-area: item1;
+}
+.rodape{
+    grid-area: rodape;
+}
+
+body{
+    background: rgb(188, 210, 26);
+}
+#titulo{
+    background: blue;
+    text-align: center;
+    color: aliceblue;
+    padding: 2vh;
+    height: 15vw;
+}
+
+.filter{
+    text-align: center;
+    padding: 5vh;
+    height:5vw ;
+}
+#rodape{
+    background: blue;
+    color: aliceblue;
+    text-align: center;
+    padding: 5vh;
+    height: 2vw;
+
+}
+
+@media screen and (max-device-width : 647px) {
+
+    main section#item1
+    {
+      width: 25em;
+      margin: 15px;
+      font-size: 15px;
+    }
+  
+    main section #filter {
+      height: 8em;
+      border-radius: 50%;
+    }
+}
+  
+  @media screen and (max-device-width : 517px) {
+  
+    main section#item1
+    {
+      width: 22em;
+      margin: 12px;
+      font-size: 14px;
+    }
+  
+    main section #filter {
+      height: 7em;
+      border-radius: 50%;
+    }
+}
